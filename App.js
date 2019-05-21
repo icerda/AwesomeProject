@@ -29,7 +29,7 @@ export default class FlatListBasics extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingTop: 22
+        paddingTop: 60
     },
     item: {
         padding: 10,
