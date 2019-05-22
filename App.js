@@ -1,42 +1,15 @@
 import React, {Component} from 'react';
-import {AppRegistry, FlatList, StyleSheet, Text, View} from 'react-native';
+import {AppRegistry, Image} from 'react-native';
 
-export default class FlatListBasics extends Component {
+export default class Bananas extends Component {
     render() {
+        let pic = {
+            uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+        };
         return (
-            <View style={styles.container}>
-                <FlatList
-                    data={[
-                        {key: 'Devin'},
-                        {key: 'Jackson'},
-                        {key: 'James'},
-                        {key: 'Joel'},
-                        {key: 'John'},
-                        {key: 'Jillian'},
-                        {key: 'Jimmy'},
-                        {key: 'Juliesss'},
-                        {key: 'Arianna'},
-                        {key: 'Hot Reload'},
-                        {key: 'Shake'}
-                    ]}
-                    renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
-                />
-            </View>
+            <Image source={pic} style={{width: 193, height: 110}}/>
         );
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: 60
-    },
-    item: {
-        padding: 10,
-        fontSize: 18,
-        height: 44,
-    },
-})
-
-// skip this line if using Create React Native App
 
